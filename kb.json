@@ -3,7 +3,7 @@
     "id": "espresso-101",
     "title": "Making a Classic Espresso",
     "content": "1. Grind your beans to a fine setting. 2. Tamp firmly. 3. Brew under 9 bar for ~25 seconds. 4. Serve immediately.",
-	"aliases" ["espresso", "espresso 101", "espresso", "make espresso", "How to make espresso"],
+	"aliases": ["espresso", "espresso 101", "espresso", "make espresso", "How to make espresso"],
     "skillDomain": "Barista Basics",
     "knowledgeDomain": "Espresso Preparation",
     "capabilityLevel": 1
