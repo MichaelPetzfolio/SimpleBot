@@ -8,6 +8,7 @@ body { font:16px/1.5 Arial, sans-serif; margin:0; padding:0; }
   max-width: 360px;
   margin: 40px auto;
   box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  height: auto;
 }
 #chat-container::before {
   content: "Chatbot";
@@ -27,6 +28,8 @@ body { font:16px/1.5 Arial, sans-serif; margin:0; padding:0; }
   flex: 1;                    /* fill available space */
   overflow-y: auto;
   background: #f9f9fb;
+  max-height: 500px;
+	
 }
 #message-list li {
   max-width: 75%;
