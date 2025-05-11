@@ -1,7 +1,7 @@
 (async function() {
   const response = await fetch('kb.json');
   const kb = await response.json();
-  const log = [];
+  const log = JSON.parse(localStorage.getItem('steamlineLog') || '[]');
   const form = document.getElementById('chat-form');
   const input = document.getElementById('chat-input');
   const list = document.getElementById('message-list');
@@ -31,6 +31,7 @@
     const art = queryKB(userQ) || { content: "Sorry, I don't have that yet." };
     addMessage('Bot: ' + art.content, 'bot');
     log.push({ timestamp: Date.now(), query: userQ, articleId: art.id || null });
+	localStorage.setItem('steamlineLog', JSON.stringify(log));
     input.value = '';
   });
 })();
